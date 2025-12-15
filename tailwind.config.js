@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  content: ["./app/**/*.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -19,9 +16,9 @@ export default {
         }
       },
       fontFamily: {
-        gurajada: ['Gurajada', 'serif'],
-        urbanist: ['Urbanist', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        gurajada: ['Gurajada_400Regular'],
+        urbanist: ['Urbanist_400Regular', 'Urbanist_500Medium', 'Urbanist_600SemiBold', 'Urbanist_700Bold'],
+        poppins: ['Poppins_400Regular', 'Poppins_600SemiBold'],
       }
     },
   },

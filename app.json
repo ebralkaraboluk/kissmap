@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Kissmap",
+    "slug": "kissmap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFD3E7"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kissmap.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Haritada konumunuzu göstermek ve öpücük bırakmak için konum izni gereklidir."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFD3E7"
+      },
+      "package": "com.kissmap.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Haritada konumunuzu göstermek ve öpücük bırakmak için konum izni gereklidir."
+        }
+      ]
+    ],
+    "scheme": "kissmap",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
